@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>환영합니다</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<[endif]-->
+<link rel="stylesheet" href="reset.css">   
+<link rel="stylesheet" href="default.css">
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="main.css">               
+<link rel="stylesheet" href="ft.css">
+
+<style>
+    
+    #page1{background-image: url("./images/sub_top.png");
+    background-repeat: no-repeat; background-position: center top; background-attachment: fixed;}
+    .pagetitle{color: #fff; padding-top: 120px;}
+    #page{background:#f0e478;}
+    .page{background-repeat: no-repeat; background-position: center top;
+    background-attachment: fixed;}
+   
+    #page2{background-image: url("");}
+    #page3{background-image: url("");}
+    .page.left, .page .right{position: absolute; top:220px; z-index:15;
+    display: block; width:auto ; height: 40px; background-position: left center;
+    background-image: url("");}
+    .page .rifht{right: 150px; padding-right: 60px; background-position: right center; background-image: url("");}
+    #page2{background-color: aqua;}
+    #page3{background-color: aquamarine;}
+    .bread{clear: both; border-top:0px solid #bababa; margin-top: 14px; height:  }
+    /*--------------------------------------------------------------*/
+    
+     @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+    *{margin:0; padding: 0;
+    }
+    
+    body, html{
+           width: 100%;
+           height: 100%; 
+           font-family: 'Noto Sans KR', sans-serif;
+        }
+        ul{
+           list-style: none;
+        }
+        a{
+           text-decoration: none;
+           color: #000;
+        }
+        img{
+           border: 0;
+       }
+    
+    /*-------------------------------------------------------------*/
+
+
+    .hd {position: absolute; z-index: 100;}
+    .wrap{width:100%; height:100%;}
+    .wrap .hd{width:100%; height:160px;}
+    .hd .hdwrap{width: 1200px;height: 160px; margin:0px auto;}
+    .wrap { width: 100%; height: 100%; }
+    #con { width: 100%; height:100%; }
+    .page { clear:both; width:100%; height:100%; position:relative;}
+    
+    
+    .tnb{width:100%; height:60px;  }    
+    .tnb ul.left li{float: left; text-align: center; list-style-type:none; font-size:16px; line-height:52px; margin-right:10px;}
+    .tnb ul.right li{float: right; text-align: center; list-style-type:none;  line-height:52px;  margin-left:20px;}   
+    .tnb ul a
+    {    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #999;
+    font-size: 0.8em;}
+    
+     .tnb ul
+    {    padding-left: 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    color: #999;
+    font-size: 0.8em;}
+    
+    
+    
+    .tnb ul a:hover{color: #999;}
+    /*{color:#c0c0c0; text-decoration:none;font-size:0.8em; }*/
+    .gnb {width:100%; height:100px;}
+    .gnb li{list-style-type: none;
+    
+    }
+    .gnb {background-image: url(images/menubg.png);
+    width:100%;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    top: 40px;
+    z-index: 100;
+        
+    background-size: 100% 100%;}
+    
+    .logo { float: left; line-height:110px; padding-left: 60px; }
+    .gnb{width:1920px; }
+    .gnb ul{ height:80px;  margin:0px auto;}
+  .gnb li {display: block; float: left; line-height:80px; }
+    .menu li{ margin-left:70px; position: relative;}
+    .menu li a:hover{}
+    .menu li .sub{display: none; position: absolute; background:rgba(0,0,0,0.7); left:0px;}
+    .menu li:hover .sub{ display: block; }
+    .menu li .sub li{}
+    .menu li .sub li a{line-height: 10px;}
+    .menu .sub li {margin-left: 0px;}
+    .sub li{line-height: 0px;}
+     .sub li a{color: #fff;}
+    #main{position: relative;}
+    .main_btn{z-index: 60; bottom:48%;left:44%;}
+/*section ul.imgbox .lban img.bg_img{ background-image:  border:1px solid red;}*/
+    #visual{ overflow: hidden;  width:100%; height:100%;  }
+    #visual .item1{background-image: url(""); background-size:100% 100%;}
+    #visual .item2{background-image: url(""); background-size:100% 100%;}
+    #visual .item3{background-image: url(""); background-size:100% 100%;}
+    .imgbox { width:200%; }
+    .imgbox li { width:50%; float:left; }
+    #visual .titbox{position: absolute; top:300px; left:0;
+        text-align: center; z-index: 70;}
+    
+    #visual .titbox .tit {margin-left: 40px;}
+    
+    #visual .more{position: absolute; width: 14%; right: 43%;
+    top:42%; z-index: 21; display: block; 
+         }
+    .lban { width:100%; height:100%; overflow:hidden;  }
+    .lban img { display:block; width:100%; }
+    #page2{overflow: hidden; background-image:url(""), url("");
+    background-position: left top, right bottom; background-repeat: no-repeat; background-color: #f5f5f5;}
+    .btnbox{width: 170px;margin: 30px auto;}
+    .btnbox li{float: left; margin-left:10px; }
+    .btnbox li button {display: block; width: 12px; background:#ccc;
+    height: 12px; border-radius: 7px; outline:0; border:0; }
+    .btnbox li button .active{background: #f442b0; width: 80px;}
+    #page2 .imgbox{padding-top: 60px;}
+    #page2 .imgbox li{text-align: center;}
+    .probox {width: 100%; height: 100%;}
+    .probox li {float:left; width: 25%; height:100%;}
+    .probox li img{display: block; width: 100%; height: auto;}
+    #page3 .pagewrap{height: 100%; height: 100%;}
+    #page3{background-image: url(""); background-color:#f7f7f7; background-size: 100% 100%; overflow: hidden;}
+    
+    #page4{width:1920px; height:1440px; background-image: url("./images/bg_4.png"); background-position:left top; background-repeat: no-repeat;background-color: #f5f5f5; border:1px solid rad;}
+    #page4 .pagetitle, .midtitle, p.txt1{text-align: center;}
+    .probox2 {width: 100%; height: 100%;}
+    .probox2 li {width: 25%; margin-right:5%; float:left;
+    position: relative;}
+    .probox2 li.first {margin-left:7.5%;}
+    .probox2 li.last{margin-right:7.5%; }
+    .probox2 li a {display: block; width: 100%;}
+    .probox2 li a img {display: block; width: 100%; height: auto;}
+    .probox2 li span {position: absolute; top:30px; left:30px; }
+    #page5 .col{width: 100%; height: 50%; clear: both; background-position: center; background-repeat: no-repeat; background-size: 100% 100%;}
+    
+    #page5 .item1{background-image: url("./images/bg5.png");}
+    #page5 .item2{background-image: url("./images/bg6.png");}
+    #page5  .pagetitle{color: #fff; line-height: 3.4em;}
+    #page5  .midtitle{color: #fff; line-height: 2.4em;}
+    #search{display: block; width: 600px; height: 42px; margin: 10pa auto; padding-right: 25px; outline: 0; border:0; border-radius:24px;
+    background-image: url(""); background-position: right;24px; background-image: url(""); background-position: right center; background-repeat: no-repeat;  }
+    #page5 .noti{ text-align: center; color: #f0f0f0;}
+    
+    
+    .ft{clear: both; height: 200px; width: 100%;
+    background:#333; }
+    .ftwrap{width: 1280px;height: 200px; margin:0px auto;
+        background-image: url("./images/ft.png");
+    background-position: left center; background-repeat: no-repeat;}
+    .fnb{width: 60%; float: left; margin-left: 80px;}
+    .fnb li {float: left; padding: 10px; }
+    .fnb a {color: #999; font-size: 0.9em;}
+    .fnb a .active {color:f442b0;}
+    .cp{clear: both; color:#999; font-size:0.9em; line-height:3;
+    padding-left:15px; padding-top: 20px; }
+    .sub{width: 100px; line-height:0px; 
+        height: 5px;}
+    .sub li{ padding:10px; }
+    .sub li a{line-height:0px;}
+    .totop{display: block; padding: 15px; position:fixed; right:100px; bottom: 260px; z-index: 9999; background:#ececec;
+    color: #222; box-shadow: 0px 0px 2px #000; border: 1px solid #ccc;}
+    
+    /*----------------------------------------5월30일 서브메뉴부분--------------------------------------------*/
+    .ckitem{display: block;}
+    .bread{clear: both; border-top: 3px solid #fefefe; margin-top: 174px; height: 40px;
+    width: 100%; position: relative; border-bottom: 2px solid #efefff;}
+    
+    .bread .home, .bread .selcate, .bread .selcur{display: block; font-size: 18px; padding: 0px 15px;
+    color: aqua; float: left; line-height: 44px; margin-left: 200px;}
+    .bread .selcate .bread .selcur{padding-left: 10px;}
+    
+    .bread. .home:after, .bread .selcate:after{content:"/"; padding-left: 15px;}
+    
+    .cate, .curpage{position: relative;float: left;}
+    
+    .categroyp, .curgroyp{position: absolute top:0; left:0;, z-index: 17; background: #eee;
+    border:1px solid #444; display: none; }
+    .ckitem:checked~ .categroup{ display: block;}
+    .ckitem:checked~ .curegroup{ display: block;}
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    .tbitem1, .tbitem2,.tbitem3{display: none;}
+    .btngroup{clear: both; width: 100%; padding-left: 200px; height: 100px; border-bottom: 1px solid #999;}
+    
+    .btngroup li{float: left; margin:20px; }
+    
+    .btngroup label{display: block; padding: 0px 15px; line-height: 30px; border-radius: 14px; border-bottom: 1px solid #999;}
+    
+    .tbitem1:checked~.btngroup .item1 label{background:#dfdfdf;color: #fff; border: 1px solid #999; }
+    
+    .tbitem2:checked~.btngroup .item2 label{background:#dfdfdf;color: #fff; border: 1px solid #999; }
+    
+    .tbitem3:checked~.btngroup .item3 label{background:#dfdfdf;color: #fff; border: 1px solid #999; }
+</style>
+
+
+<link rel="stylesheet" href="ft.css">
+</head>
+
+<body>
+<div class="wrap">
+    <header class="hd">
+       <div class="hdwrap">
+            <nav class="tnb">
+                <ul class="left">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+                <ul class="right">
+                    <li>KAKAOTALK</li>
+                    <li>INSTAGRAM</li>
+                    <li>TWITTER</li>
+                    
+                </ul>
+            </nav>
+            <nav class="gnb">
+               <a href="index.html" class="logo">
+               <img src="./images/logo1.png" alt="로고">
+               </a>
+                <ul class="menu">
+                    <li><a href="#">CAFFE MOMO</a>
+                    <ul class="sub">
+                        <li><a href="">브랜드소개</a></li>
+                        <li><a href="">커피</a></li>
+                        <li><a href="">디저트</a></li>
+                    
+                    </ul>
+                    
+                    </li>
+                    
+                    <li><a href="#">MENU</a>
+                    <ul class="sub">
+                        <li><a href="">브랜드소개</a></li>
+                        <li><a href="">커피</a></li>
+                        <li><a href="">디저트</a></li>
+                    </ul>
+                    </li>
+                    
+                      
+                      <li><a href="#">EVENT</a>
+                       <ul class="sub">
+                       <li><a href="">브랜드소개</a></li>
+                        <li><a href="">커피</a></li>
+                        <li><a href="">디저트</a></li>
+                        
+                    </ul>
+                    </li>
+                    
+                    <li><a href="#">STORE</a>
+                    <ul class="sub">
+                      <li><a href="">브랜드소개</a></li>
+                        <li><a href="">커피</a></li>
+                        <li><a href="">디저트</a></li>
+                        <li></li>
+                    </ul>
+                    
+                    
+                    </li>
+                    <li><a href="#">CUSTOMER</a></li>
+                </ul>                
+                
+            </nav>
+       </div>
+        
+        
+    </header>
+<section id="con">
+    <div class="page" id="page1">
+        <div class="pagewrap">
+           <a href="page3" class="left">홍보센터</a>
+           
+            <h2 class="pagetitle">브랜드소개</h2>
+            <a href="#page2" class="left">커피&amp;컬쳐</a>
+            <div class="bread">
+                <a href="momo.html" class="home">HOME</a>
+                <div class="cate">
+                   <input type="checkbox" id="cateck1" class="ckitem">
+                    <label href="cateck1" class="selaate">브랜드소개</label>
+                    <ul class="curgroup">
+                        <li><a href="sub1.html" class="page">CAFFE MOMO</a></li>
+                        <li><a href="sub2.html" class="page">MENU</a></li>
+                        <li><a href="sub3.html"class="page">EVENT</a></li>
+                        <li><a href="sub4.html" class="page">STORE</a></li>
+                        <li><a href="sub5.html" class="page">CUSTOMER</a></li>
+                    </ul>
+                </div>
+                <div class="curpage">
+                    <input type="checkbox" id="curck" class="ckitem">
+                    <label for="curck1" class="selcur">브랜드소개</label>
+                    <ul class="curgroup">
+                        <li><a href="sub1.html#page1">브랜드소개</a></li>
+                        <li><a href="sub1.html#page2">모모이야기</a></li>
+                        <li><a href="sub1.html#page3" class="">제휴사</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="tabgroup1">
+                <input type="radio" name="tg1" id="tg11"class="tbiem1" checked>
+                <input type="radio" name="tg1" id="tg12" class="tbiem2">
+                <input type="radio"name="tg1" id="tg13" class="tbiem3">
+                <ul class="btngroep">
+                    <li class="item1">
+                    <label for="tg11" class="btn1">전통과 전통
+                        
+                    </label>
+                    </li>
+                    
+                    <li class="item2">
+                       <label for="tg12" class="btn1">국내모모
+                        
+                    </label></li>
+                    <li class="item3">
+                       <label for="tg13" class="btn1">외국모모
+                        
+                    </label>
+                    </li>
+                </ul>
+                <ul class="conbox">
+                    <li class="item1">
+                        <h2 class="protitle1">slnce 2011</h2>
+                        <h3 class="protitle2">탄방동에서 시작한 진한 커피의 향기</h3>
+                        <p class="procoment">
+2011년 커피집을 시작으로 2016년에 도마동으로 오게 되었으며,
+다양한 커피종류와함께 지브리등의 일본애니메이션의 인테리어를 
+통해 아기자기한 디자인으로 카페 모모의 시작을 알리게 되었습니다.</p>
+                    </li>
+                    
+                        <li class="item1">
+                        <h2 class="protitle1">animation</h2>
+                        <h3 class="protitle2">모모와 다락방의 수상한 요괴들</h3>
+                        <p class="procoment">
+
+모모라는 이름은 일본애니영화 주인공의 이름을 가져온것입니다 
+동화속이나 전설 그리고 민담과 설화에 나올듯한 요괴나 요마와같은 
+캐릭터를 보며 카페 모모에서만큼은 다른곳에 있는듯 그리고
+아기자기함으로 사람들에게 색다른곳으로 느껴지길 바랬습니다.
+
+모모라는 이름은 일본애니영화 주인공의 이름을 가져온것입니다 
+동화속이나 전설 그리고 민담과 설화에 나올듯한 요괴나 요마와같은 
+캐릭터를 보며 카페 모모에서만큼은 다른곳에 있는듯 그리고
+아기자기함으로 사람들에게 색다른곳으로 느껴지길 바랬습니다</p>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class="page" id="page2">
+        <div class="pagewrap">
+            <h2 class="pagetitle">커피</h2>
+        </div>
+    </div>
+    <div class="page" id="page3">
+        <div class="pagewrap">
+            <h2 class="pagetitle">센터</h2>
+        </div>
+    </div>
+</section>
+
+        
+        
+        
+  <foooter class="ft">
+   <div class="ftwrap">
+   <nav class="fnb">
+    <ul>
+        <li><a href="">개인정보 처리방침</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">제휴업체정보</a></li>
+        <li><a href="">카페운영관리방침방안</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <p class="cp">
+        <span>(주)킴스패스/ 개인정보 처리방침 /이용약관 </span>
+        <span>대전시 서구 도솔로 67-1 </span>
+        <span>tel. 070-4242-9432</span><br/>
+        <span>COPYRIGHT  2011 THE MOMO. ALL RIGHTS RESERVED.</span>
+        
+    </p>
+    <nav class="snb">
+        <ul>
+            <li>
+                <a href="https://www.kakaocorp.com/service/KakaoTalk" 
+                title="KAKAO" target="_blank"> 
+                <img src="./images/sns1.png" alt="카카오톡">
+                </a>
+                <a href="https://www.instagram.com" 
+                title="insta"target="_blank">
+                <img src="./images/sns2.png" alt="인스타">
+                </a>
+                <a href="https://twitter.com" 
+                title="twitter"target="_blank">
+                <img src="./images/sns3.png" alt="트위터">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</nav>                                    
+</div>            
+            
+        </foooter>
+        
+    </section>
+   
+
+    </div>
+    <a href="" class="totop">
+        <span>TOP</span>
+    </a>
+</body>
+</html>
