@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="180">
+    
+    <!-- IE9 Less then Setting -->
+    <!--[if lte IE 8]>
+        <script src="./dist/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <title>전기안전연구원</title>
+    <style>
+        * { margin:0; padding:0; }    
+    button, a, label, input { outline:0; border:0; text-decoration:none; background:transparent; }
+    ul { list-style:none; }
+    body, html { width:100%; height:100%;  }    
+   
+    /* first 모바일 레이아웃  */    
+    .mo { display:block; }
+    .mo.hd { width:100%; height:60px; overflow:hidden; 
+        position:relative; text-align:center; padding-top:10px;
+        box-sizing:border-box;
+        background:#000; } 
+    .fs30 { font-size:30px; color:#fff; }    
+    .mo.hd .home { position:absolute; top:15px; left:15px; 
+        z-index:20;}
+    .mo.hd .lst { position:absolute; top:15px; right:15px; 
+        z-index:20; }
+    .wrap { clear:both; width:calc(100% + 200px); height:100%; }
+    .content { float:left; 
+        width:calc(100% - 200px); }
+    .vs { display:block; width:100%; }
+    .vs img { width:100%; height:auto; }
+    .pageTit { line-height:2.4; text-align:center; }
+        
+        
+    .product { width:100%; }
+    .product .col { float:left; width:100%; position:relative; } 
+    .product .col a { display:block; text-align:center; }
+    .product .col a img { } 
+        
+        
+    .proTit { line-height:1.8; color:#333; }    
+    .protext{font-size:0.8em; color:#333; text-align: center; margin-bottom: 10px;}
+        
+    .ft { clear:both; height:85px; width:100%; background:#333; }
+    #fnb { width:90%; margin:10px auto; }
+    #fnb li { float:left; width:25%; }
+    #fnb li a { display:block; font-size:0.8em; color:#fff; 
+        line-height:1.8; text-align:center; }
+    .copyright { text-align:center; clear:both; font-size:0.8em; 
+        color:#fff; border-top:1px solid #555; line-height:50px; }
+    .ck { display:none; }
+    .gnb { width:200px; height:100%; background:rgba(200, 200, 200, 0.8); margin-left:-200px; transition:0.6s; float:left; }
+    .gnb li { line-height:36px; border-bottom:1px solid #666; 
+        background:#333;  border-top:1px solid #000; }
+    .gnb a { display:block; text-indent:20px; line-height:36px; 
+        color:#fff;      }
+    #menu_call:checked ~ .wrap .gnb { margin-left:0; }
+    #menu_call:not(:checked) ~ .hd .lst .fa-bars { display:block; }
+    #menu_call:not(:checked) ~ .hd .lst .fa-times { display:none; }
+    #menu_call:checked ~ .hd .lst .fa-bars { display:none; }
+    #menu_call:checked ~ .hd .lst .fa-times { display:block; }
+    .desk { display:none; }
+    #menu { clear:both; width:100%; text-align:center; }
+    #menu .menu {clear: both;height: 40px;width: 100%;
+    background-color: #000;}
+    #menu li { float:left; width:16.6%; line-height:40px; }
+    #menu li a { display:block; background:#000; color:#fff;
+        font-size:0.9em; text-align:center; line-height:40px; } 
+    .product_icon{float: left; margin: 6%;}
+    .all_icon{background-color:#f8f8f8;display: flow-root;}
+    .text{color: black;font-size: 18px;text-align: center; margin-bottom: 10px;}
+        .box{text-align: center;}
+        .video{text-align: center; margin: 0 auto;}    
+        /*.all_icon{text-align: center;}
+    .product_icon{    float: left;
+    display: -webkit-inline-box;
+    width: 100%;}*/
+        
+    @media screen and (max-width:767px){
+        
+        /* 모바일*/
+    
+        .product .col { width:50%; }
+        .pageTit { font-size:2em; }
+        .ft { height:120px; }
+        #fnb li a { font-size:1.2em;  
+            line-height:2.4;  }
+        }
+    @media screen and (min-width:768px) and (max-width:959px){
+        
+        /* 태블릿 pc */
+        .product .col { width:50%; }
+        .pageTit { font-size:2em; }
+        .ft { height:120px; }
+        #fnb li a { font-size:1.2em;  
+            line-height:2.4;  }
+    }
+    @media screen and (min-width:960px) {
+        /* 데스크탑 pc */
+        .mo { display:none; }
+        .desk { display:block;}
+        .product .col { width:33.3333%; }
+        .pageTit { font-size:2.4em; }
+        .ft { height:150px; }
+        #fnb li a { font-size:1.5em;  
+            line-height:2.8;  }
+            
+        .product_icon{float: left; margin: 10%; margin-top: 15px; margin-bottom: 15px;}
+    }
+        .icon img {width: 100%;
+            height: auto;}
+        .video{width: 100%;
+            height: auto;}
+        .imgBox{    width: 400%;}
+        .imgBox li{    float: left;
+        
+            width: 25%;}
+        .vs img{background-image:url("./img/bg1.png")
+ 
+    </style>
+    
+    <script>
+        $(document).ready(function() {
+  
+            var imgWd = parseInt($(".vs").width());
+            var intv = setInterval(function() {
+                leftAni();
+            }, 3000);
+
+            function leftAni() {
+                $(".imgBox").not(":animated").animate({
+                    "margin-left": -imgWd + "px"
+                }, 800, function() {
+                    $(".imgBox li").eq(0).appendTo($(".imgBox"));
+                    $(".imgBox").css("margin-left", "0px");
+                });
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+   
+    <input type="checkbox" id="menu_call" class="ck">
+    <header class="mo hd">
+        <button class="home">
+            <i class="fas fa-home fs30"></i>
+        </button>
+        <a href="" class="logo">
+            <img src="./img/m_logo.png" alt="">
+        </a>
+        <label for="menu_call" class="lst">
+            <i class="fas fa-bars fs30"></i>
+            <i class="fas fa-times fs30"></i>
+        </label>
+    </header>
+    <nav id="menu" class="desk">
+        <a href="" class="logo">
+            <img src="./img/logo2.png" alt="">
+        </a>
+        <ul class="menu">
+                    <li><a href="">연구원소개</a></li>
+                    <li><a href="">사업소개</a></li>
+                    <li><a href="">연구성과</a></li>
+                    <li><a href="">홍보</a></li>
+
+        </ul>
+    </nav>
+    <div class="wrap">
+        <aside class="mo gnb">
+            <nav id="gnb">
+                <ul class="menu">
+                    <li><a href="">연구원소개</a></li>
+                    <li><a href="">사업소개</a></li>
+                    <li><a href="">연구성과</a></li>
+                    <li><a href="">홍보</a></li>
+                
+
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <figure class="vs"><img src="./img/p.png" alt="배경"></figure>
+           
+       
+<footer class="ft">
+    <nav id="fnb">
+       
+    </nav>
+    <p class="copyright">한국
+ © Ryohin Keikaku Co., Ltd.<br>
+ LOTTE.com.lnc.공정거래위원회 사업자정보확인</p>
+</footer>               
+        </section>
+
+</body>
+
+</html>

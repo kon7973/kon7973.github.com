@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="180">
+    <!-- 사이트 정보 -->
+    <meta name="application-name" content="MUJI">
+    <meta name="author" content="kej">
+    <meta name="description" content="의류,생활잡화,식품 소매 등 셔츠 및 기타 의복 소매업체 ">
+    <meta name="keywords" content="상품 온라인 스토어 가기 여성복 남성복 아동복·마터니티 이너웨어 가방·신발 액세서리·양말·우산 
+    패브릭 가구·인테리어 주방·생활용품 헬스&뷰티 · 아로마 화장품 전자제품·기프트 문구 과자·음료·소스">
+
+
+    <!-- Chrome, Safari, IE -->
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+    <!-- Firefox, Opera (Chrome and Safari say thanks but no thanks) -->
+    <link rel="icon" href="./ico/favicon.png">
+    <!-- Still works in IE6+ series2 -->
+    <link rel="shortcut icon" href="./ico/favicon.ico" type="image/vnd.microsoft.icon">
+    <!-- Still works in IE6+ series3 -->
+    <link rel="shortcut icon" href="./ico/favicon.ico" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+
+    <!-- Favicon for iOS Touch Base -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Favicon Setting -->
+    <link rel="icon" type="image/png" href="./ico/favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./ico/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./ico/favicon-96.png" sizes="96x96">
+    <link rel="apple-touch-icon-precomposed" href="./ico/favicon-96.png">
+
+    <!-- IE9 Less then Setting -->
+    <!--[if lte IE 8]>
+        <script src="./dist/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <title>무인양품</title>
+    <style>
+        * { margin:0; padding:0; }    
+    button, a, label, input { outline:0; border:0; text-decoration:none; background:transparent; }
+    ul { list-style:none; }
+    body, html { width:100%; height:100%;  }    
+   
+    /* first 모바일 레이아웃  */    
+    .mo { display:block; }
+    .mo.hd { width:100%; height:60px; overflow:hidden; 
+        position:relative; text-align:center; padding-top:10px;
+        box-sizing:border-box;
+        background:#7e141c; } 
+    .fs30 { font-size:30px; color:#fff; }    
+    .mo.hd .home { position:absolute; top:15px; left:15px; 
+        z-index:20;}
+    .mo.hd .lst { position:absolute; top:15px; right:15px; 
+        z-index:20; }
+    .wrap { clear:both; width:calc(100% + 200px); height:100%; }
+    .content { float:left; 
+        width:calc(100% - 200px); }
+    .vs { display:block; width:100%; }
+    .vs img { width:100%; height:auto; }
+    .pageTit { line-height:2.4; text-align:center; }
+        
+        
+    .product { width:100%; }
+    .product .col { float:left; width:100%; position:relative; } 
+    .product .col a { display:block; text-align:center; }
+    .product .col a img { } 
+        
+        
+    .proTit { line-height:1.8; color:#333; }    
+    .protext{font-size:0.8em; color:#333; text-align: center; margin-bottom: 10px;}
+        
+    .ft { clear:both; height:85px; width:100%; background:#333; }
+    #fnb { width:90%; margin:10px auto; }
+    #fnb li { float:left; width:25%; }
+    #fnb li a { display:block; font-size:0.8em; color:#fff; 
+        line-height:1.8; text-align:center; }
+    .copyright { text-align:center; clear:both; font-size:0.8em; 
+        color:#fff; border-top:1px solid #555; line-height:50px; }
+    .ck { display:none; }
+    .gnb { width:200px; height:100%; background:rgba(200, 200, 200, 0.8); margin-left:-200px; transition:0.6s; float:left; }
+    .gnb li { line-height:36px; border-bottom:1px solid #666; 
+        background:#333;  border-top:1px solid #000; }
+    .gnb a { display:block; text-indent:20px; line-height:36px; 
+        color:#fff;      }
+    #menu_call:checked ~ .wrap .gnb { margin-left:0; }
+    #menu_call:not(:checked) ~ .hd .lst .fa-bars { display:block; }
+    #menu_call:not(:checked) ~ .hd .lst .fa-times { display:none; }
+    #menu_call:checked ~ .hd .lst .fa-bars { display:none; }
+    #menu_call:checked ~ .hd .lst .fa-times { display:block; }
+    .desk { display:none; }
+    #menu { clear:both; width:100%; text-align:center; }
+    #menu .menu {clear: both;height: 40px;width: 100%;
+    background-color: #7e141c;}
+    #menu li { float:left; width:16.6%; line-height:40px; }
+    #menu li a { display:block; background:#7e141c; color:#fff;
+        font-size:0.9em; text-align:center; line-height:40px; } 
+    .product_icon{float: left; margin: 6%;}
+    .all_icon{background-color:#f8f8f8;display: flow-root;}
+    .text{color: black;font-size: 18px;text-align: center; margin-bottom: 10px;}
+        .box{text-align: center;}
+        .video{text-align: center; margin: 0 auto;}    
+        /*.all_icon{text-align: center;}
+    .product_icon{    float: left;
+    display: -webkit-inline-box;
+    width: 100%;}*/
+    @media screen and (min-width:768px) and (max-width:959px){
+        
+        /* 태블릿 pc */
+        .product .col { width:50%; }
+        .pageTit { font-size:2em; }
+        .ft { height:120px; }
+        #fnb li a { font-size:1.2em;  
+            line-height:2.4;  }
+    }
+    @media screen and (min-width:960px) {
+        /* 데스크탑 pc */
+        .mo { display:none; }
+        .desk { display:block;}
+        .product .col { width:33.3333%; }
+        .pageTit { font-size:2.4em; }
+        .ft { height:150px; }
+        #fnb li a { font-size:1.5em;  
+            line-height:2.8;  }
+            
+        .product_icon{float: left; margin: 10%; margin-top: 15px; margin-bottom: 15px;}
+    }
+        .icon img {width: 100%;
+            height: auto;}
+        .video{width: 100%;
+            height: auto;}
+        .imgBox{    width: 400%;}
+        .imgBox li{    float: left;
+    width: 25%;
+ 
+    </style>
+    
+    <script>
+        $(document).ready(function() {
+  
+            var imgWd = parseInt($(".vs").width());
+            var intv = setInterval(function() {
+                leftAni();
+            }, 3000);
+
+            function leftAni() {
+                $(".imgBox").not(":animated").animate({
+                    "margin-left": -imgWd + "px"
+                }, 800, function() {
+                    $(".imgBox li").eq(0).appendTo($(".imgBox"));
+                    $(".imgBox").css("margin-left", "0px");
+                });
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+   
+    <input type="checkbox" id="menu_call" class="ck">
+    <header class="mo hd">
+        <button class="home">
+            <i class="fas fa-home fs30"></i>
+        </button>
+        <a href="" class="logo">
+            <img src="./img/logo.png" alt="">
+        </a>
+        <label for="menu_call" class="lst">
+            <i class="fas fa-bars fs30"></i>
+            <i class="fas fa-times fs30"></i>
+        </label>
+    </header>
+    <nav id="menu" class="desk">
+        <a href="" class="logo">
+            <img src="./img/logo2.png" alt="">
+        </a>
+        <ul class="menu">
+            <li><a href="">무지소개</a></li>
+            <li><a href="">신상품</a></li>
+            <li><a href="">기획상품</a></li>
+            <li><a href="">아울렛</a></li>
+            <li><a href="">의류</a></li>
+            <li><a href="">식품</a></li>
+
+        </ul>
+    </nav>
+    <div class="wrap">
+        <aside class="mo gnb">
+            <nav id="gnb">
+                <ul class="menu">
+                    <li><a href="">무지소개</a></li>
+                    <li><a href="">신상품</a></li>
+                    <li><a href="">기획상품</a></li>
+                    <li><a href="">아울렛</a></li>
+                    <li><a href="">의류</a></li>
+                    <li><a href="">식품</a></li>
+
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <figure class="vs"><img src="./img/main_bg1.png" alt="배너"></figure>
+            <h3 class="pageTit">제품카테고리<h3>
+                    <div class="all_icon">
+                        <ul class="product_icon">
+                            <li class="icon"><a href=""><img src="./img/icon_1.png" alt="">
+                                    <p class="text">남성복</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_2.png" alt="">
+                                    <p class="text">여성복</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_3.png" alt="">
+                                    <p class="text">아동복</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_4.png" alt="">
+                                    <p class="text">이너웨어</p>
+                                </a></li>
+
+                        </ul>
+
+                        <ul class="product_icon">
+
+                            <li class="icon"><a href=""><img src="./img/icon_5.png" alt="">
+                                    <p class="text">악세사리<br>양말</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_6.png" alt="">
+                                    <p class="text">패브릭</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_7.png" alt="">
+                                    <p class="text">가구</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_8.png" alt="">
+                                    <p class="text">주방용품<br>생활용품</p>
+                                </a></li>
+
+                        </ul>
+
+                        <ul class="product_icon">
+
+                            <li class="icon"><a href=""><img src="./img/icon_9.png" alt="">
+                                    <p class="text">헬스용품<br>아로마</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_10.png" alt="">
+                                    <p class="text">가방</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_11.png" alt="">
+                                    <p class="text">문구용품</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_12.png" alt="">
+                                    <p class="text">화장품</p>
+                                </a></li>
+
+                        </ul>
+
+                        <ul class="product_icon">
+                            <li class="icon"><a href=""><img src="./img/icon_13.png" alt="">
+                                    <p class="text">전자제품</p>
+                                </a></li>
+                            <li class="icon"><a href=""><img src="./img/icon_14.png" alt="">
+                                    <p class="text">과자음료<br>소스</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <h3 class="pageTit">인기상품<h3>
+                            <ul>
+                                <li class="box"><a href=""><img src="./img/box.png" alt="">
+
+                                    </a></li>
+                            </ul>
+                     <h3 class="pageTit">What is MUJI?<h3> 
+                     <p class="protext">'상표가 없는 좋은 물건'이라는 의미로 1980년 일본에서<br> 
+                         설립되었으며,의복잡화∙생활잡화∙식품 등의 다양한상품들을<br> 
+                         좋은 품질로 제공하고 있습니다.</p> 
+                    
+                         <video autoplay muted width="100%" height="500">
+  <source src="03.mp4"  type="video/mp4"><source/>
+</video>  
+       
+<footer class="ft">
+    <nav id="fnb">
+        <ul class="fmenu">
+            <li><a href="">고객센터</a></li>
+            <li><a href="">사이트맵</a></li>
+            <li><a href="">Message from MUJI</a></li>
+            <li><a href="">기업정보</a></li>
+        </ul>
+    </nav>
+    <p class="copyright">한국
+ © Ryohin Keikaku Co., Ltd.
+ LOTTE.com.lnc.공정거래위원회 사업자정보확인</p>
+</footer>               
+        </section>
+
+</body>
+
+</html>
