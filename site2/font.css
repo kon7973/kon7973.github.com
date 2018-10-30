@@ -1,0 +1,19 @@
+@charset "utf-8"
+@font-face{
+    font-family:"ns";
+    src:local("DO"),/*1번*/
+        local("DO")
+        url("../font/DO.otf") format("opentype"),
+        url("../font/DO.eot") format("opentype-opentype"),
+        url("../font/DO.woff") format("woff"),
+        url("../font/DO.ttf") format("truetype");
+        
+        
+}
+@font-face{
+    font-family:"ns";
+         url("../font/DO.otf") format("opentype"),
+        url("../font/DO.eot") format("opentype-opentype"),
+        url("../font/DO.woff") format("woff"),
+        url("../font/DO.ttf") format("truetype");
+}
