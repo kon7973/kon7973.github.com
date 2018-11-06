@@ -26,7 +26,7 @@ html {
 
 body {
     font-family: Merriweather, 'Helvetica Neue', Arial, sans-serif;
-    webkit-tap-highlight-color: #222
+    webkit-tap-highlight-color: #222;
 }
 
 .btn,
@@ -693,12 +693,7 @@ footer{
 }
 
 
-
-
-
 /*정렬*/
-
-
 
 
 .up{margin-top: -54px;}
